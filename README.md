@@ -23,3 +23,9 @@ Sync: The data is sent to the items collection in Firestore.
 Broadcast: All active users receive the update instantly through a real-time stream.
 
 Manage: Items can be removed from the cloud once the owner is found.
+
+## 🔮 Future Scope
+- **User Authentication:** Implementing Secure login via Firebase Auth to allow users to manage their own listings.
+- **AI Integration:** Using Google Cloud Vision API for automatic item categorization through image analysis.
+- **Map View:** Integrating Google Maps API to provide a visual representation of where items were last seen.
+- **Push Notifications:** Alerting users in real-time when an item matching their search criteria is found.
