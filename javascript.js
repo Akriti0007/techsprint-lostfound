@@ -46,6 +46,7 @@ form.addEventListener('submit', async (e) => {
         desc: document.getElementById('description').value,
         createdAt: firebase.firestore.FieldValue.serverTimestamp()
     });
+    alert("Success! Your report has been posted to the cloud.");
     form.reset();
 });
 
