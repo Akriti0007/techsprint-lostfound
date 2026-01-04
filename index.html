@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+
+</head>
+<body>
+        <header>
+        <nav>
+            <div class="logo">🔍 LostFound</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#report">Report Item</a></li>
+                <li><a href="#browse">Browse Items</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="hero">
+        <h1>Lost something? Found something?</h1>
+        <p>Connecting misplaced items with their rightful owners.</p>
+    </section>
+
+    <section id="report" class="container">
+        <h2>Report an Item</h2>
+        <form id="lost-found-form">
+            <div class="form-group">
+                <label>I have...</label>
+                <select id="type" required>
+                    <option value="lost">Lost an item</option>
+                    <option value="found">Found an item</option>
+                </select>
+            </div>
+              <input type="text" id="itemName" placeholder="Item Name..." required>
+    <input type="text" id="location" placeholder="Location..." required>
+    <textarea id="description" placeholder="Description..." rows="4"></textarea>
+    
+    <button type="submit" class="btn-primary">Post Report</button>
+        </form>
+    </section>
+
+    <section id="browse" class="container">
+        <h2>Recent Listings</h2>
+        <div id="itemGrid" class="item-grid">
+            <div class="item-card lost">
+        </div>
+    </section>
+
+
+<script src="javascript.js"></script>
+</body></html>
+
+           

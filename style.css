@@ -1,0 +1,142 @@
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: blue;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 4rem 1rem;
+    background: rgb(45, 44, 66);
+    color: white;
+}
+
+/* Container & Forms */
+.container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+#lost-found-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.form-group { margin-bottom: 1rem; }
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+/* Buttons */
+.btn-primary {
+    background: blue;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 1px solid rgb(10, 10, 70);
+    color: rgb(10, 10, 70);
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Item Grid & Cards */
+.item-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.item-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-top: 5px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+/* Dynamic Colors for Member 2's Logic */
+.item-card.lost { border-top-color: red; }
+.item-card.found { border-top-color: blue; }
+
+.badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: white;
+}
+
+.lost .badge { background: red; }
+.found .badge { background: blue; }
+
+.card-actions { display: flex;
+     gap: 10px; 
+     margin-top: 15px; 
+    }
+
+.btn-delete:hover { background: #ef4444; 
+    color: white; 
+}
+
+.btn-delete { background: white;
+     border: 1px solid #ef4444; 
+     color: #ef4444; 
+     padding: 8px; border-radius:
+      4px; cursor: pointer; 
+    }
+
