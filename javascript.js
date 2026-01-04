@@ -56,11 +56,16 @@ window.removeItem = async (id) => {
     }
 };
 
+/**
+ * REAL-TIME LISTENER:
+ * Listens for any changes in the 'items' collection on Google Cloud Firestore.
+ * If the database is empty, it displays a placeholder message.
+ * Otherwise, it triggers the UI update to show live lost/found reports.
+ */
 itemsCol.onSnapshot((snapshot) => {
     if (snapshot.empty) {
         itemGrid.innerHTML = '<p class="text-center">No reports found yet. All items are safe!</p>';
         return;
     }
-
 });
     
